@@ -1,0 +1,23 @@
+########******************  SQL Injection  ***********###################
+
+	2015kucp1034
+	Shams Ali
+
+
+	In this execise I created a database using xampp named iss containing two
+	tables lab and theory .
+	
+	Database : iss
+	Tables : lab and theory
+	
+	Both the tables have some entries in them.
+	
+	Query used : Select * from lab;Drop table theory
+	
+	Observation : The query returned an empty set result set (zero rows).
+				  And the table theory was dropped.
+				  
+		But if we use query : Select * from lab;Drop table theory;
+		
+		It shows all the rows available in table lab and then it drops 
+		table theory.  

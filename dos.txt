@@ -1,0 +1,21 @@
+#####***********  DOS Attack    ***********######
+
+	command used to perform DOS attack : ping -t <victim_IP_address> -s 65000
+		observation : Due to this attack the response time of the victim IP address increases.
+					  If we continue doing this attack with multiple user the response time 
+					  of the victim goes on increasing continuously.
+					  Also the website took long time to load.
+					  
+		Example    :  In this case we performed this attack on website www.skit.ac.in
+					  and many more.
+	
+	
+#####******** DDOS Attack    **********###########
+
+	Tool used   : Torshammer
+	Observation : This activity was performed in group.
+				  Using this tool, the response time of the website increased so the website became 
+				  less responsive and took long time to load.
+	Example     : Victim website www.skit.ac.in
+				  				  
+				 

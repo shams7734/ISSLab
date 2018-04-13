@@ -1,0 +1,21 @@
+***********
+	Shams Ali
+	2015kucp1034
+	IP spoofing  ************
+	
+	This activity was performed by 
+	Shams Ali (2015kucp1034)
+	Jai Pal Singh (2015kucp1038)
+	
+	In this we did IP spoofing using nmap .
+	Command used : nmap 192.168.43.22
+	In this case the target IP is 192.168.43.22 . We can see the packets using wireshark and tcpdump.
+	
+	For IP spoofing 
+	Command used : nmap -e wlp1s0 -S 172.21.7.53 192.168.43.22
+	Spoofed IP   : 172.21.7.53
+	Original Ip  : 192.168.43.22
+	
+	We can visualise this through wireshark as now it shows the packets sent from the spoofed IP
+	but the actual sender is someone else.
+	I have included the screenshot and the a text file of the packets .

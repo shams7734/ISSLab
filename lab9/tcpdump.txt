@@ -1,0 +1,59 @@
+/*  command used nmap 192.168.43.22  */
+
+23:41:18.738766 IP6 fe80::4f2:22ff:febc:a61f > ff02::1:ff8f:5ad3: ICMP6, neighbor solicitation, who has 2405:205:110d:a742:c015:d880:858f:5ad3, length 32
+23:41:18.738851 IP6 2405:205:110d:a742:c015:d880:858f:5ad3 > fe80::4f2:22ff:febc:a61f: ICMP6, neighbor advertisement, tgt is 2405:205:110d:a742:c015:d880:858f:5ad3, length 32
+23:41:19.353402 IP6 fe80::4f2:22ff:febc:a61f > ff02::1:ff93:269a: ICMP6, neighbor solicitation, who has 2405:205:110d:a742:b3be:8db2:e693:269a, length 32
+23:41:19.353480 IP6 2405:205:110d:a742:b3be:8db2:e693:269a > fe80::4f2:22ff:febc:a61f: ICMP6, neighbor advertisement, tgt is 2405:205:110d:a742:b3be:8db2:e693:269a, length 32
+23:41:20.991519 IP 192.168.43.22.45884 > 192.168.43.239.80: Flags [S], seq 3006990186, win 29200, options [mss 1460,sackOK,TS val 3983441671 ecr 0,nop,wscale 7], length 0
+23:41:20.991577 IP 192.168.43.239.80 > 192.168.43.22.45884: Flags [R.], seq 0, ack 3006990187, win 0, length 0
+23:41:20.991614 IP 192.168.43.22.35910 > 192.168.43.239.443: Flags [S], seq 209332113, win 29200, options [mss 1460,sackOK,TS val 3983441671 ecr 0,nop,wscale 7], length 0
+23:41:20.991626 IP 192.168.43.239.443 > 192.168.43.22.35910: Flags [R.], seq 0, ack 209332114, win 0, length 0
+23:41:21.305489 IP 192.168.43.22.39144 > 192.168.43.239.1025: Flags [S], seq 3109269740, win 29200, options [mss 1460,sackOK,TS val 3983441762 ecr 0,nop,wscale 7], length 0
+23:41:21.305545 IP 192.168.43.239.1025 > 192.168.43.22.39144: Flags [R.], seq 0, ack 3109269741, win 0, length 0
+23:41:21.305582 IP 192.168.43.22.41540 > 192.168.43.239.587: Flags [S], seq 120802845, win 29200, options [mss 1460,sackOK,TS val 3983441762 ecr 0,nop,wscale 7], length 0
+23:41:21.305593 IP 192.168.43.239.587 > 192.168.43.22.41540: Flags [R.], seq 0, ack 120802846, win 0, length 0
+23:41:21.305605 IP 192.168.43.22.35916 > 192.168.43.239.443: Flags [S], seq 1758075765, win 29200, options [mss 1460,sackOK,TS val 3983441762 ecr 0,nop,wscale 7], length 0
+23:41:21.305611 IP 192.168.43.239.443 > 192.168.43.22.35916: Flags [R.], seq 0, ack 1758075766, win 0, length 0
+23:41:21.305622 IP 192.168.43.22.59740 > 192.168.43.239.5900: Flags [S], seq 2592733208, win 29200, options [mss 1460,sackOK,TS val 3983441762 ecr 0,nop,wscale 7], length 0
+
+
+/*  Using nmap ipspoofing remote IP is 172.21.7.53 and actual IP is 192.168.43.22    */
+
+
+23:41:40.860776 IP6 2405:205:110d:a742:db63:4061:a55:b1a8.5353 > ff02::fb.5353: 0 [9q] PTR (QM)? _nfs._tcp.local. PTR (QM)? _ipp._tcp.local. PTR (QM)? _ipps._tcp.local. PTR (QM)? _ftp._tcp.local. PTR (QM)? _webdav._tcp.local. PTR (QM)? _webdavs._tcp.local. PTR (QM)? _sftp-ssh._tcp.local. PTR (QM)? _smb._tcp.local. PTR (QM)? _afpovertcp._tcp.local. (141)
+23:41:50.690543 ARP, Request who-has 192.168.43.239 tell 172.21.7.53, length 28
+23:41:50.690597 ARP, Reply 192.168.43.239 is-at 78:0c:b8:89:8b:31, length 28
+23:41:52.941281 IP6 fe80::4f2:22ff:febc:a61f > ff02::1:ff51:3ff8: ICMP6, neighbor solicitation, who has fe80::a32:a941:4e51:3ff8, length 32
+23:41:52.941368 IP6 fe80::a32:a941:4e51:3ff8 > fe80::4f2:22ff:febc:a61f: ICMP6, neighbor advertisement, tgt is fe80::a32:a941:4e51:3ff8, length 32
+23:41:52.944625 IP 192.168.43.22.5353 > 224.0.0.251.5353: 0 [9q] PTR (QM)? _nfs._tcp.local. PTR (QM)? _ipp._tcp.local. PTR (QM)? _ipps._tcp.local. PTR (QM)? _ftp._tcp.local. PTR (QM)? _webdav._tcp.local. PTR (QM)? _webdavs._tcp.local. PTR (QM)? _sftp-ssh._tcp.local. PTR (QM)? _smb._tcp.local. PTR (QM)? _afpovertcp._tcp.local. (141)
+23:41:53.965072 IP6 fe80::4f2:22ff:febc:a61f > ff02::1:ff8f:5ad3: ICMP6, neighbor solicitation, who has 2405:205:110d:a742:c015:d880:858f:5ad3, length 32
+23:41:53.965160 IP6 2405:205:110d:a742:c015:d880:858f:5ad3 > fe80::4f2:22ff:febc:a61f: ICMP6, neighbor advertisement, tgt is 2405:205:110d:a742:c015:d880:858f:5ad3, length 32
+23:41:54.021990 ARP, Request who-has 192.168.43.239 tell 192.168.43.1, length 28
+23:41:54.022029 ARP, Reply 192.168.43.239 is-at 78:0c:b8:89:8b:31, length 28
+23:41:54.579528 IP6 fe80::4f2:22ff:febc:a61f > ff02::1:ff93:269a: ICMP6, neighbor solicitation, who has 2405:205:110d:a742:b3be:8db2:e693:269a, length 32
+23:41:54.579611 IP6 2405:205:110d:a742:b3be:8db2:e693:269a > fe80::4f2:22ff:febc:a61f: ICMP6, neighbor advertisement, tgt is 2405:205:110d:a742:b3be:8db2:e693:269a, length 32
+23:41:55.075010 IP6 2405:205:110d:a742:c015:d880:858f:5ad3.5353 > ff02::fb.5353: 0 [9q] PTR (QM)? _nfs._tcp.local. PTR (QM)? _ipp._tcp.local. PTR (QM)? _ipps._tcp.local. PTR (QM)? _ftp._tcp.local. PTR (QM)? _webdav._tcp.local. PTR (QM)? _webdavs._tcp.local. PTR (QM)? _sftp-ssh._tcp.local. PTR (QM)? _smb._tcp.local. PTR (QM)? _afpovertcp._tcp.local. (141)
+23:41:56.231381 IP 192.168.43.239.5353 > 224.0.0.251.5353: 0 [9q] PTR (QM)? _nfs._tcp.local. PTR (QM)? _ipp._tcp.local. PTR (QM)? _ipps._tcp.local. PTR (QM)? _ftp._tcp.local. PTR (QM)? _webdav._tcp.local. PTR (QM)? _webdavs._tcp.local. PTR (QM)? _sftp-ssh._tcp.local. PTR (QM)? _smb._tcp.local. PTR (QM)? _afpovertcp._tcp.local. (141)
+23:42:04.206865 ARP, Request who-has 192.168.43.22 tell 192.168.43.1, length 28
+23:42:04.207834 IP 172.21.7.53.62583 > 192.168.43.239.139: Flags [S], seq 4223233520, win 1024, options [mss 1460], length 0
+23:42:04.207890 IP 192.168.43.239.139 > 172.21.7.53.62583: Flags [R.], seq 0, ack 4223233521, win 0, length 0
+23:42:04.207925 IP 172.21.7.53.62583 > 192.168.43.239.554: Flags [S], seq 4223233520, win 1024, options [mss 1460], length 0
+23:42:04.207936 IP 192.168.43.239.554 > 172.21.7.53.62583: Flags [R.], seq 0, ack 4223233521, win 0, length 0
+23:42:04.207949 IP 172.21.7.53.62583 > 192.168.43.239.445: Flags [S], seq 4223233520, win 1024, options [mss 1460], length 0
+23:42:04.207956 IP 192.168.43.239.445 > 172.21.7.53.62583: Flags [R.], seq 0, ack 4223233521, win 0, length 0
+23:42:04.207966 IP 172.21.7.53.62583 > 192.168.43.239.113: Flags [S], seq 4223233520, win 1024, options [mss 1460], length 0
+23:42:04.208017 IP 172.21.7.53.62583 > 192.168.43.239.3306: Flags [S], seq 4223233520, win 1024, options [mss 1460], length 0
+23:42:04.208054 IP 192.168.43.239.135 > 172.21.7.53.62583: Flags [R.], seq 0, ack 4223233521, win 0, length 0
+23:42:04.208096 IP 172.21.7.53.62583 > 192.168.43.239.22: Flags [S], seq 4223233520, win 1024, options [mss 1460], length 0
+23:42:04.208132 IP 192.168.43.239.22 > 172.21.7.53.62583: Flags [S.], seq 3260223127, ack 4223233521, win 29200, options [mss 1460], length 0
+23:42:05.207135 IP 192.168.43.239.22 > 172.21.7.53.62583: Flags [S.], seq 3260223127, ack 4223233521, win 29200, options [mss 1460], length 0
+23:42:05.217716 IP 172.21.7.53.62584 > 192.168.43.239.22: Flags [S], seq 4223167985, win 1024, options [mss 1460], length 0
+23:42:05.217799 IP 192.168.43.239.22 > 172.21.7.53.62584: Flags [S.], seq 1357329173, ack 4223167986, win 29200, options [mss 1460], length 0
+23:42:05.217855 IP 172.21.7.53.62584 > 192.168.43.239.1025: Flags [S], seq 4223167985, win 1024, options [mss 1460], length 0
+23:42:05.217881 IP 192.168.43.239.1025 > 172.21.7.53.62584: Flags [R.], seq 0, ack 4223167986, win 0, length 0
+23:42:05.224518 IP 172.21.7.53.62584 > 192.168.43.239.135: Flags [S], seq 4223167985, win 1024, options [mss 1460], length 0
+23:42:05.224590 IP 192.168.43.239.135 > 172.21.7.53.62584: Flags [R.], seq 0, ack 4223167986, win 0, length 0
+23:42:05.224630 IP 172.21.7.53.62584 > 192.168.43.239.3306: Flags [S], seq 4223167985, win 1024, options [mss 1460], length 0
+23:42:05.224642 IP 192.168.43.239.3306 > 172.21.7.53.62584: Flags [R.], seq 0, ack 4223167986, win 0, length 0
+
+
